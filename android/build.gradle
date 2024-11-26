@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        google() // Firebase için gerekli
+        mavenCentral() // Diğer bağımlılıklar için
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.3.1' // Gradle sürümünüze göre ayarlayın
+        classpath 'com.google.gms:google-services:4.4.0' // Firebase eklentisi
+    }
+}
+
+allprojects {
+    repositories {
+        google() // Firebase için gerekli
+        mavenCentral() // Diğer bağımlılıklar için
+    }
+}
+
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

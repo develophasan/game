@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "597974960869",
+    "firebase_url": "https://racerushbattle-default-rtdb.firebaseio.com",
+    "project_id": "racerushbattle",
+    "storage_bucket": "racerushbattle.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597974960869:android:51c1fb56c0104f1b97220c",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBcoeCdDzV0rD4TLfcYNVx55rxbGbqB1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
